@@ -45,13 +45,19 @@ foreach($rows as $row => $option){
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4-4.1.1/jq-3.3.1/dt-1.10.21/b-1.6.2/b-colvis-1.6.2/datatables.min.css"/>
+    <style>
+        div.dataTables_wrapper {
+            width: 100%;
+            margin: 0 auto;
+        }
+    </style>
   <title>Document</title>
 </head>
 <body>
 
 
-<div class="modal-content">
-  <div class="modal-body">
+<div class="container">
+    <h1>SRU Catalog Search</h1>
     <form name="appbundle_bibliographysearch" method="post" class="modal-form-new order">
 
 
@@ -111,7 +117,7 @@ foreach($rows as $row => $option){
         </div>
         <div class="col-sm-6 col-lg-3">
           <br>
-          <button class="btn btn-primary" id="searchform_submit" type="submit"><span id="search_search">Suche </span><span id="search_running" style="display:none;"><span id="search_running_text">Suche läuft</span> <img src="/img/load.gif"></span></button>
+          <button class="btn btn-primary" id="searchform_submit" type="submit"><span id="search_search">Suche </span><span id="search_running" style="display:none;"><span id="search_running_text">Suche läuft</span> &#8987;</span></button>
 
           <button type="button" class="btn btn-default" data-dismiss="modal">Abbrechen</button>
         </div>
@@ -133,11 +139,11 @@ foreach($rows as $row => $option){
                     '</th>';
                 }
                 ?>
-
             </thead>
         </table>
 
     </div>
+</div>
 
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs4-4.1.1/jq-3.3.1/dt-1.10.21/b-1.6.2/b-colvis-1.6.2/datatables.min.js"></script>    <script type="text/javascript">
 
@@ -165,7 +171,8 @@ foreach($rows as $row => $option){
           buttonEn();
         } ).DataTable({
           //initiliaze Datatables
-        order: [], //disable initial ordering
+          scrollX: true,
+          order: [], //disable initial ordering
           dom: "<'row'<'col-sm-8 datatableInfo'><'col-sm-4'f>>" +
         "<'row'<'col-sm-12'tr>>" +
         "<'row'<'col-sm-4'><'col-sm-4'p><'col-sm-4'l>>",
@@ -209,7 +216,5 @@ foreach($rows as $row => $option){
 
 
       </script>
-  </div>
-</div>
 </body>
 </html>

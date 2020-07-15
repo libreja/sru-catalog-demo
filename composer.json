@@ -2,7 +2,7 @@
     "name": "libreja/sru-catalog-demo",
     "type": "project",
     "require": {
-        "libreja/sru-catalog-api": "^0.0.2"
+        "libreja/sru-catalog-api": "dev-master"
     },
     "license": "MIT",
     "authors": [

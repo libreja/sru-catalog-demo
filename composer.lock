@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9266352b28364da5403648f16579db1f",
+    "content-hash": "22c61d85d0247ecbb29d4c88359d5c0c",
     "packages": [
         {
             "name": "libreja/sru-catalog-api",
-            "version": "0.0.2",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/libreja/sru-catalog-api.git",
-                "reference": "08eed56e1dc0c5f92b8fd121d74a3c1ec8a54efd"
+                "reference": "409899dc5cdf024902886b2e00f50a919f2041b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/libreja/sru-catalog-api/zipball/08eed56e1dc0c5f92b8fd121d74a3c1ec8a54efd",
-                "reference": "08eed56e1dc0c5f92b8fd121d74a3c1ec8a54efd",
+                "url": "https://api.github.com/repos/libreja/sru-catalog-api/zipball/409899dc5cdf024902886b2e00f50a919f2041b0",
+                "reference": "409899dc5cdf024902886b2e00f50a919f2041b0",
                 "shasum": ""
             },
             "require": {
@@ -56,13 +56,15 @@
                 "league",
                 "package"
             ],
-            "time": "2020-06-09T09:45:35+00:00"
+            "time": "2020-07-15T18:20:08+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "libreja/sru-catalog-api": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
