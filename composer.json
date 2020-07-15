@@ -1,0 +1,14 @@
+{
+    "name": "libreja/sru-catalog-demo",
+    "type": "project",
+    "require": {
+        "libreja/sru-catalog-api": "^0.0.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Martin Schibel",
+            "email": "mshd94@gmail.com"
+        }
+    ]
+}

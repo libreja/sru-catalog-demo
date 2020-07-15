@@ -1,0 +1,70 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "9266352b28364da5403648f16579db1f",
+    "packages": [
+        {
+            "name": "libreja/sru-catalog-api",
+            "version": "0.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/libreja/sru-catalog-api.git",
+                "reference": "08eed56e1dc0c5f92b8fd121d74a3c1ec8a54efd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/libreja/sru-catalog-api/zipball/08eed56e1dc0c5f92b8fd121d74a3c1ec8a54efd",
+                "reference": "08eed56e1dc0c5f92b8fd121d74a3c1ec8a54efd",
+                "shasum": ""
+            },
+            "require": {
+                "ext-intl": "*",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Libreja\\SruCatalog\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Martin Schibel",
+                    "email": "martin@libreja.de",
+                    "homepage": "http://author-website.example.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Fetches books/etc from different catalogs",
+            "homepage": "https://github.com/libreja/sru-catalog-api",
+            "keywords": [
+                "league",
+                "package"
+            ],
+            "time": "2020-06-09T09:45:35+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
