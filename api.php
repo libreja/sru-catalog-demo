@@ -5,5 +5,8 @@ $sruCatalog = new SruCatalog\CatalogMain();
 
 $requested = $_GET;
 $sruCatalog->service = $requested["service"];
+$params = [
+  "maximumRecords" => $requested["maximumRecords"]
+];
 header('Content-Type: application/json');
-echo json_encode($sruCatalog->parse($requested["fields"]));
+echo json_encode($sruCatalog->parse($requested["fields"],$params));

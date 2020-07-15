@@ -31,7 +31,9 @@ function jsonAPI($request)
   unset($request["service"]);
   $params = [
   "maximumRecords" => $request["maximumRecords"]
-];
+  ];
+  unset($request["maximumRecords"]);
+
 
   $data = $sruCatalog->parse($request,$params);
   $json = ["error" => $data["error"], "numberOfRecords" => $data["numberOfRecords"], "fields" => $request, "service" => NULL, "data" => []];
